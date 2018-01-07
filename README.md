@@ -12,14 +12,14 @@ does is hide your username in the upper right hand corner of the Steam window.  
 username in as many other places as I can.  If you have any problems or suggestions, please open an issue.  If you would like
 to improve this skin yourself, feel free to submit a pull request!
 
-~cyberwitch, formerly known as #########~
+~cyberwitch, formerly known as #########
 
 # Installation
 
 1. Copy the hidename directory to your Steam install's skins folder.  The usual locations per OS are:
     * Ubuntu: `~/.steam/skins/`
     * Other Linux Distros: `~/.local/share/Steam/skins/`
-    * OS X: `/Users/<Username>/Library/Application Support/Steam/skins/`
+    * OS X: `/Users/<Username>/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins/`
     * Windows: `/Program Files/Steam/skins/`
 2. Open Steam, go to Settings (or Preferences on OS X), click the Interface tab, and choose "hidename" as your new skin.
 3. Restart Steam, and your old username in the upper right hand corner should be replaced with a profile icon.

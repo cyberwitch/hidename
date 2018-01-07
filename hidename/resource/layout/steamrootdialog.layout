@@ -16,8 +16,8 @@
 		{
 			"ControlName"		"Button"
 			style="VRButton"
-      			command="url steam://run/250820"
-     			tooltiptext="#tooltip_view_vr_start" 
+      command="startvr"
+     	tooltiptext="#tooltip_view_vr_start" 
 		}
     
 		"exitvr"
@@ -516,7 +516,40 @@
 			}
 		}
 
+		support_alert_ack
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack1 )"
 
+			}
+		}
+
+		support_alert_ack:hover
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg {
+				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack2 )"
+			}
+		}
 
 		inbox_button [!$OSX]
 		{
@@ -802,7 +835,9 @@
 		}
 		AccountURLStyle
 		{
-		  image="skins/hidename/graphics/profile"
+            image="skins/hidename/graphics/profile"
+            padding-top=-4
+            padding-right=-40
 		}
 		
 		
@@ -1005,13 +1040,12 @@
 		
 		place [!$OSX] { control="MenuBar" align=top margin-top=5 margin-left=2 }
 				
-		place [!$OSX] { control="account_balance, account_balance_seperator, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=88 spacing=7 }	
-		place [$OSX]  { control="account_balance, account_balance_seperator, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
+		place [!$OSX] { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=95 spacing=7 }
+		place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
 
-		place [!@OSX] { control="account_URL" align=right margin-top=6 margin-right=110 width=25 }
-		place [$OSX]  { control="account_URL" align=right margin-top=6 margin-right=37 width=25 }
+        place { control="account_URL" end-right="universe_label" align=right margin-top=9 width=25 }
 	
-		place [!$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=78 margin-top=1 width=30 }
+		place [!$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=85 margin-top=1 width=30 }
 		place [$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=8 margin-top=1 width=30 }
 		
 		place [!$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=6 margin-top=1 }
