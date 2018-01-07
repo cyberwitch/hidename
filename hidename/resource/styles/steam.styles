@@ -180,7 +180,10 @@ steam.styles
 		parental_lock_inactive4 "146 72 71 255"
 		parental_lock_inactive5 "103 48 47 255"	
 		red6="38 1 1 255"
-		
+
+		support_lock_ack1 "187 157 47 255"
+		support_lock_ack2 "193 166 67 255"
+
     // colors pulled from steamscheme.res
     "ClayBG"      "70 70 70 255"
     "ClayButtonBG"      "85 85 85 255"        
@@ -1250,6 +1253,17 @@ steam.styles
     	selectedtextcolor="highlight1"
     }
     
+    "GameItem_LockedSiteLicense"
+    {
+      textcolor="labeldisabled"
+      selectedtextcolor="label"
+    }
+    "GameItem_LockedSiteLicense:hover"
+    {
+      textcolor="label"
+      selectedtextcolor="label"
+    }
+ 
     "GameColumn_BigText"
 		{
 		font-family=basefont
@@ -2881,6 +2895,8 @@ steam.styles
     {
       font-family="Lucida Console"
       font-size=9
+      font-family="DejaVu Sans Mono" [$LINUX]
+      font-size=12 [$LINUX]
       font-family="Menlo" [$OSX]
       font-size=14 [$OSX]
       textcolor="label"
@@ -3262,6 +3278,8 @@ steam.styles
 	{
 		textcolor="Highlight3"
 		font-size=14
+		font-family="DejaVu Sans Mono" [$LINUX]
+		font-size=12 [$LINUX]
 		font-family="Menlo" [$OSX]
       	font-size=16 [$OSX]
 		selectedtextcolor="TextSelected"
@@ -3270,11 +3288,13 @@ steam.styles
 	
 	console_text
 	{
- 		font-family="Lucida Console"
+		font-family="Lucida Console"
 		font-size=9
+		font-family="DejaVu Sans Mono" [$LINUX]
+		font-size=12 [$LINUX]
 		font-family="Menlo" [$OSX]
-      	font-size=14 [$OSX]
-	    textcolor="text"
+		font-size=14 [$OSX]
+		textcolor="text"
 		selectedtextcolor="TextSelected"	
 		selectedbgcolor="Focus"
 	}
