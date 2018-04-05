@@ -814,10 +814,9 @@
 		AccountURLStyle
 		{
 			image="skins/hidename/graphics/profile"
-			padding-top=-4
-			padding-right=-40
+			padding-top=-3
+			padding-right=-21
 		}
-		
 		
 		//unique styles for the client main window
 		FrameMinimizeButton
